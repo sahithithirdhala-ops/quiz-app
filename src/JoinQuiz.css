@@ -1,0 +1,190 @@
+/* =========================================================
+   JOIN QUIZ
+========================================================= */
+
+.join-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #29cbd1 0%,
+      #55dca0 45%,
+      #d6f719 100%
+    );
+}
+
+.join-card {
+  width: min(440px, 100%);
+  padding: 42px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 22px 55px rgba(40, 20, 60, 0.2);
+  text-align: center;
+}
+
+/* LOGO */
+.join-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  color: #4c1594;
+  text-decoration: none;
+
+  font-size: 27px;
+  font-weight: 900;
+}
+
+.join-logo span {
+  width: 35px;
+  height: 35px;
+
+  display: grid;
+  place-items: center;
+
+  border: 2px solid #4c1594;
+  border-radius: 9px;
+}
+
+/* HEADING */
+.join-card h1 {
+  margin: 30px 0 8px;
+
+  color: #302a34;
+  font-size: 35px;
+  font-weight: 900;
+  letter-spacing: -0.7px;
+}
+
+.join-subtitle {
+  margin: 0 0 30px;
+
+  color: #68616d;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+/* FORM */
+.join-card form {
+  text-align: left;
+}
+
+.join-card label {
+  display: block;
+
+  margin: 16px 0 7px;
+
+  color: #302a34;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.join-card input {
+  width: 100%;
+  padding: 14px 15px;
+
+  border: 2px solid #e2dce7;
+  border-radius: 9px;
+
+  background: #ffffff;
+  color: #302a34;
+
+  outline: none;
+  font-size: 15px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.join-card input::placeholder {
+  color: #aaa4ae;
+}
+
+.join-card input:hover {
+  border-color: #c9bfd2;
+}
+
+.join-card input:focus {
+  border-color: #4c1594;
+  box-shadow: 0 0 0 3px rgba(76, 21, 148, 0.1);
+}
+
+/* JOIN BUTTON */
+.join-card form button {
+  width: 100%;
+
+  margin-top: 27px;
+  padding: 15px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: #4c1594;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.join-card form button:hover {
+  background: #3d0d7c;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 16px rgba(76, 21, 148, 0.25);
+}
+
+/* BACK HOME */
+.back-home {
+  display: inline-block;
+
+  margin-top: 22px;
+
+  color: #4c1594;
+  font-size: 14px;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition: transform 0.2s ease;
+}
+
+.back-home:hover {
+  transform: translateX(-3px);
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  .join-page {
+    padding: 20px 12px;
+  }
+
+  .join-card {
+    padding: 30px 22px;
+    border-radius: 17px;
+  }
+
+  .join-card h1 {
+    font-size: 30px;
+  }
+
+  .join-logo {
+    font-size: 24px;
+  }
+
+  .join-logo span {
+    width: 32px;
+    height: 32px;
+  }
+}

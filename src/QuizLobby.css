@@ -1,0 +1,241 @@
+/* =========================================================
+   QUIZ LOBBY
+========================================================= */
+
+.lobby-page {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #29cbd1 0%,
+      #55dca0 45%,
+      #d6f719 100%
+    );
+}
+
+.lobby-card {
+  width: min(500px, 100%);
+
+  padding: 45px;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  box-shadow: 0 22px 55px rgba(40, 20, 60, 0.2);
+
+  text-align: center;
+}
+
+/* LOGO */
+
+.lobby-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  color: #4c1594;
+
+  font-size: 27px;
+  font-weight: 900;
+}
+
+.lobby-logo span {
+  width: 35px;
+  height: 35px;
+
+  display: grid;
+  place-items: center;
+
+  border: 2px solid #4c1594;
+  border-radius: 9px;
+}
+
+/* GAME ICON */
+
+.lobby-icon {
+  margin-top: 28px;
+
+  width: 76px;
+  height: 76px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: #f5f1fa;
+
+  font-size: 40px;
+
+  box-shadow: 0 6px 18px rgba(76, 21, 148, 0.12);
+}
+
+/* HEADING */
+
+.lobby-card h1 {
+  margin: 20px 0 8px;
+
+  color: #302a34;
+
+  font-size: 36px;
+  font-weight: 900;
+
+  letter-spacing: -0.8px;
+}
+
+.lobby-message {
+  margin: 0 0 27px;
+
+  color: #68616d;
+
+  line-height: 1.5;
+
+  font-size: 15px;
+}
+
+/* WAITING BOX */
+
+.waiting-box {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+
+  padding: 24px;
+
+  background: #f7f3fb;
+
+  border: 1px solid #e7dff0;
+
+  border-radius: 13px;
+
+  color: #302a34;
+
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.waiting-box h2 {
+  margin: 0;
+
+  color: #4c1594;
+
+  font-size: 21px;
+
+  font-weight: 900;
+}
+
+.waiting-box strong {
+  font-size: 18px;
+}
+
+.waiting-box span {
+  color: #68616d;
+
+  font-size: 14px;
+
+  line-height: 1.4;
+}
+
+/* START BUTTON */
+
+.start-demo {
+  display: inline-block;
+
+  margin-top: 27px;
+
+  padding: 14px 34px;
+
+  background: #4c1594;
+
+  color: white;
+
+  border-radius: 9px;
+
+  font-size: 16px;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+}
+
+.start-demo:hover {
+  background: #3d0d7c;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 7px 17px rgba(76, 21, 148, 0.25);
+}
+
+/* LEAVE */
+
+.leave-quiz {
+  display: block;
+
+  width: fit-content;
+
+  margin: 20px auto 0;
+
+  color: #4c1594;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition: transform 0.2s ease;
+}
+
+.leave-quiz:hover {
+  transform: translateX(-3px);
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  .lobby-page {
+    padding: 20px 12px;
+  }
+
+  .lobby-card {
+    padding: 32px 22px;
+
+    border-radius: 17px;
+  }
+
+  .lobby-card h1 {
+    font-size: 30px;
+  }
+
+  .lobby-logo {
+    font-size: 24px;
+  }
+
+  .lobby-logo span {
+    width: 32px;
+    height: 32px;
+  }
+
+  .lobby-icon {
+    width: 68px;
+    height: 68px;
+
+    font-size: 34px;
+  }
+
+  .waiting-box {
+    padding: 20px 15px;
+  }
+}

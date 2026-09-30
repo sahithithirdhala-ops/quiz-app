@@ -1,0 +1,241 @@
+/* =========================================================
+   CREATE QUIZ PAGE
+========================================================= */
+
+.create-quiz-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 55px 20px;
+  background:
+    linear-gradient(
+      135deg,
+      #29cbd1 0%,
+      #55dca0 45%,
+      #d6f719 100%
+    );
+}
+
+/* MAIN CARD */
+.create-quiz-card {
+  width: min(680px, 100%);
+  height: fit-content;
+  padding: 42px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 22px 55px rgba(40, 20, 60, 0.2);
+}
+
+/* LOGO */
+.create-quiz-logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #4c1594;
+  font-size: 27px;
+  font-weight: 900;
+}
+
+.create-quiz-logo span {
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #4c1594;
+  border-radius: 9px;
+}
+
+/* HEADING */
+.create-quiz-card h1 {
+  margin: 30px 0 8px;
+  color: #302a34;
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: -0.8px;
+}
+
+.create-quiz-subtitle {
+  margin: 0 0 27px;
+  color: #68616d;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* FORM */
+.create-quiz-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-quiz-card label {
+  margin: 14px 0 7px;
+  color: #302a34;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/* INPUTS */
+.create-quiz-card input,
+.create-quiz-card select {
+  width: 100%;
+  padding: 14px 15px;
+  border: 2px solid #e2dce7;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #302a34;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.create-quiz-card input::placeholder {
+  color: #aaa4ae;
+}
+
+.create-quiz-card input:hover,
+.create-quiz-card select:hover {
+  border-color: #c9bfd2;
+}
+
+.create-quiz-card input:focus,
+.create-quiz-card select:focus {
+  border-color: #4c1594;
+  box-shadow: 0 0 0 3px rgba(76, 21, 148, 0.1);
+}
+
+/* ADD QUESTION BUTTON */
+.create-quiz-card form button {
+  margin-top: 27px;
+  padding: 15px;
+  border: none;
+  border-radius: 9px;
+  background: #4c1594;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.create-quiz-card form button:hover {
+  background: #3d0d7c;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 16px rgba(76, 21, 148, 0.25);
+}
+
+/* QUESTION COUNT */
+.question-count {
+  margin-top: 22px;
+  padding: 13px;
+  border-radius: 9px;
+  background: #f5f1fa;
+  color: #4c1594;
+  text-align: center;
+  font-weight: 800;
+}
+
+/* ADDED QUESTIONS */
+.added-questions {
+  margin-top: 23px;
+}
+
+.added-questions h3 {
+  margin: 0 0 12px;
+  color: #302a34;
+  font-size: 19px;
+}
+
+.added-question {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #e3dfe6;
+  border-radius: 10px;
+  background: #faf9fb;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.added-question:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(40, 20, 60, 0.08);
+}
+
+.added-question strong {
+  color: #302a34;
+  line-height: 1.4;
+}
+
+.added-question span {
+  color: #4c1594;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* CREATE QUIZ BUTTON */
+.final-create-button {
+  width: 100%;
+  margin-top: 27px;
+  padding: 15px;
+  border: none;
+  border-radius: 9px;
+  background: #22a447;
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.final-create-button:hover {
+  background: #187534;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 16px rgba(34, 164, 71, 0.25);
+}
+
+/* BACK BUTTON */
+.create-quiz-back {
+  display: block;
+  margin: 18px auto 0;
+  padding: 10px 18px;
+  border: none;
+  background: transparent;
+  color: #4c1594;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.create-quiz-back:hover {
+  transform: translateX(-3px);
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  .create-quiz-page {
+    padding: 25px 12px;
+  }
+
+  .create-quiz-card {
+    padding: 27px 20px;
+    border-radius: 16px;
+  }
+
+  .create-quiz-card h1 {
+    font-size: 30px;
+    margin-top: 25px;
+  }
+
+  .create-quiz-logo {
+    font-size: 24px;
+  }
+
+  .create-quiz-logo span {
+    width: 32px;
+    height: 32px;
+  }
+}

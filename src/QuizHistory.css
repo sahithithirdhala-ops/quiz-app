@@ -1,0 +1,268 @@
+/* =========================================================
+   QUIZ HISTORY
+========================================================= */
+
+.history-page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 50px 25px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #29cbd1 0%,
+      #55dca0 45%,
+      #d6f719 100%
+    );
+}
+
+.history-card {
+  width: min(820px, 100%);
+
+  height: fit-content;
+
+  padding: 40px;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  box-shadow: 0 22px 55px rgba(40, 20, 60, 0.2);
+}
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.history-logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  color: #4c1594;
+
+  font-size: 27px;
+  font-weight: 900;
+}
+
+.history-logo span {
+  width: 35px;
+  height: 35px;
+
+  display: grid;
+  place-items: center;
+
+  border: 2px solid #4c1594;
+
+  border-radius: 9px;
+}
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.history-card h1 {
+  margin: 30px 0 25px;
+
+  color: #302a34;
+
+  font-size: 34px;
+  font-weight: 900;
+
+  letter-spacing: -0.6px;
+}
+
+/* =========================================================
+   NO HISTORY
+========================================================= */
+
+.no-history {
+  padding: 25px;
+
+  border: 1px solid #e7dff0;
+
+  border-radius: 12px;
+
+  background: #f7f3fb;
+
+  color: #68616d;
+
+  text-align: center;
+
+  line-height: 1.5;
+}
+
+/* =========================================================
+   HISTORY LIST
+========================================================= */
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+/* History item */
+
+.history-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 18px 20px;
+
+  border: 1px solid #e1dce6;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.history-item:hover {
+  transform: translateY(-2px);
+
+  border-color: #d3c6df;
+
+  box-shadow: 0 8px 20px rgba(40, 20, 60, 0.08);
+}
+
+/* Left information */
+
+.history-item > div:first-child {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.history-item strong {
+  color: #302a34;
+
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.history-item span {
+  color: #77717d;
+
+  font-size: 13px;
+}
+
+/* Score */
+
+.history-score {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  color: #4c1594;
+
+  font-size: 20px;
+  font-weight: 900;
+
+  white-space: nowrap;
+}
+
+.history-score small {
+  margin-top: 3px;
+
+  color: #68616d;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* =========================================================
+   HOME BUTTON
+========================================================= */
+
+.history-home {
+  display: inline-block;
+
+  margin-top: 25px;
+
+  padding: 13px 22px;
+
+  border-radius: 9px;
+
+  background: #4c1594;
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+}
+
+.history-home:hover {
+  background: #3d0d7c;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 7px 17px rgba(76, 21, 148, 0.25);
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  .history-page {
+    padding: 25px 15px;
+  }
+
+  .history-card {
+    padding: 30px 20px;
+
+    border-radius: 17px;
+  }
+
+  .history-logo {
+    font-size: 24px;
+  }
+
+  .history-logo span {
+    width: 32px;
+    height: 32px;
+  }
+
+  .history-card h1 {
+    margin-top: 25px;
+
+    font-size: 28px;
+  }
+
+  .history-item {
+    align-items: flex-start;
+
+    gap: 15px;
+
+    padding: 16px;
+  }
+
+  .history-score {
+    font-size: 18px;
+  }
+
+  .history-home {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    text-align: center;
+  }
+}

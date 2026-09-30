@@ -1,0 +1,265 @@
+/* =========================================================
+   RESULTS PAGE
+========================================================= */
+
+.results-page {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #29cbd1 0%,
+      #55dca0 45%,
+      #d6f719 100%
+    );
+}
+
+.results-card {
+  width: min(520px, 100%);
+
+  padding: 45px;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  box-shadow: 0 22px 55px rgba(40, 20, 60, 0.2);
+
+  text-align: center;
+}
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.results-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  color: #4c1594;
+
+  font-size: 27px;
+  font-weight: 900;
+}
+
+.results-logo span {
+  width: 35px;
+  height: 35px;
+
+  display: grid;
+  place-items: center;
+
+  border: 2px solid #4c1594;
+
+  border-radius: 9px;
+}
+
+/* =========================================================
+   RESULT ICON
+========================================================= */
+
+.results-icon {
+  width: 82px;
+  height: 82px;
+
+  margin: 28px auto 0;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: #f5f1fa;
+
+  font-size: 48px;
+
+  box-shadow: 0 6px 18px rgba(76, 21, 148, 0.12);
+}
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.results-card h1 {
+  margin: 20px 0 8px;
+
+  color: #302a34;
+
+  font-size: 36px;
+  font-weight: 900;
+
+  letter-spacing: -0.8px;
+}
+
+.results-message {
+  margin: 0 0 27px;
+
+  color: #68616d;
+
+  line-height: 1.5;
+
+  font-size: 15px;
+}
+
+.completion-text {
+  margin: 0 0 15px;
+
+  color: #4c1594;
+
+  font-size: 17px;
+  font-weight: 800;
+}
+
+/* =========================================================
+   SCORE BOX
+========================================================= */
+
+.score-box {
+  padding: 26px 22px;
+
+  background: #f7f3fb;
+
+  border: 1px solid #e7dff0;
+
+  border-radius: 14px;
+
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.score-label {
+  margin-bottom: 6px;
+
+  color: #68616d;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+.final-score {
+  color: #4c1594;
+
+  font-size: 44px;
+  font-weight: 900;
+
+  line-height: 1.1;
+}
+
+.percentage {
+  margin-top: 7px;
+
+  color: #68616d;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.results-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  margin-top: 27px;
+}
+
+.play-again,
+.home-button {
+  display: block;
+
+  padding: 14px;
+
+  border-radius: 9px;
+
+  font-size: 15px;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+}
+
+/* Play Again */
+
+.play-again {
+  background: #4c1594;
+
+  color: white;
+}
+
+.play-again:hover {
+  background: #3d0d7c;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 7px 17px rgba(76, 21, 148, 0.25);
+}
+
+/* Home */
+
+.home-button {
+  border: 2px solid #4c1594;
+
+  background: #ffffff;
+
+  color: #4c1594;
+}
+
+.home-button:hover {
+  background: #f5f1fa;
+
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  .results-page {
+    padding: 20px 12px;
+  }
+
+  .results-card {
+    padding: 32px 22px;
+
+    border-radius: 17px;
+  }
+
+  .results-logo {
+    font-size: 24px;
+  }
+
+  .results-logo span {
+    width: 32px;
+    height: 32px;
+  }
+
+  .results-icon {
+    width: 70px;
+    height: 70px;
+
+    font-size: 40px;
+  }
+
+  .results-card h1 {
+    font-size: 30px;
+  }
+
+  .final-score {
+    font-size: 38px;
+  }
+}
